@@ -70,7 +70,7 @@ function App() {
         </Menu>
       </div>
 
-      <div className="input-section">
+      {/* <div className="input-section">
         <Input placeholder="default"></Input>
         <Input placeholder="disabled" disabled></Input>
         <Input placeholder="prepend" prepend="www."></Input>
@@ -102,7 +102,7 @@ function App() {
           <br />
           <p>Drag file over to upload</p>
         </Upload>
-      </div>
+      </div> */}
     </div>
   )
 }
