@@ -4,7 +4,7 @@ export var Dragger = function (props) {
     var onFile = props.onFile, children = props.children;
     var _a = useState(false), dragOver = _a[0], setDragOver = _a[1];
     var klass = classNames('garyc-uploader-dragger', {
-        'is-dragover': dragOver,
+        'is-dragover': dragOver
     });
     var handleDrop = function (e) {
         e.preventDefault();

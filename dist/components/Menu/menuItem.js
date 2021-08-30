@@ -6,7 +6,7 @@ var MenuItem = function (props) {
     var context = useContext(MenuContext);
     var classes = classNames('menu-item', className, {
         'is-disabled': disabled,
-        'is-active': context.index === index,
+        'is-active': context.index === index
     });
     var handleClick = function () {
         if (context.onSelect && !disabled && typeof index === 'string') {

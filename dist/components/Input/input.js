@@ -23,15 +23,6 @@ var __rest = (this && this.__rest) || function (s, e) {
 import React from 'react';
 import classNames from 'classnames';
 import Icon from '../Icon/icon';
-/**
- * Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
- *
- * ~~~js
- * // 这样引用
- * import { Input } from 'garycship'
- * ~~~
- * 支持 HTMLInput 的所有基本属性
- */
 export var Input = function (props) {
     var _a;
     var disabled = props.disabled, size = props.size, icon = props.icon, prepend = props.prepend, append = props.append, style = props.style, restProps = __rest(props, ["disabled", "size", "icon", "prepend", "append", "style"]);

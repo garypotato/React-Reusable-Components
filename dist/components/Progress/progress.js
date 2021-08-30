@@ -8,6 +8,6 @@ var Progress = function (props) {
 Progress.defaultProps = {
     strokeHeight: 15,
     showText: true,
-    theme: 'primary',
+    theme: 'primary'
 };
 export default Progress;

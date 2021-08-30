@@ -25,7 +25,6 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 var Icon = function (props) {
     var _a;
-    // icon-primary
     var className = props.className, theme = props.theme, restProps = __rest(props, ["className", "theme"]);
     var classes = classNames('garyc-icon', className, (_a = {},
         _a["icon-" + theme] = theme,

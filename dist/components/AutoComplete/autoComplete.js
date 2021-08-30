@@ -120,7 +120,7 @@ export var AutoComplete = function (props) {
                     React.createElement(Icon, { icon: "spinner", spin: true }))),
                 suggestions.map(function (item, index) {
                     var cnames = classNames('suggestion-item', {
-                        'is-active': index === highlightIndex,
+                        'is-active': index === highlightIndex
                     });
                     return (React.createElement("li", { key: index, className: cnames, onClick: function () { return handleSelect(item); } }, renderTemplate(item)));
                 }))));

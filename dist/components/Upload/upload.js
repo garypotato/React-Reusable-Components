@@ -87,9 +87,8 @@ export var Upload = function (props) {
             name: file.name,
             size: file.size,
             percent: 0,
-            raw: file,
+            raw: file
         };
-        //setFileList([_file, ...fileList])
         setFileList(function (prevList) {
             return __spreadArray([_file], prevList, true);
         });
@@ -112,7 +111,7 @@ export var Upload = function (props) {
                         onProgress(percentage, file);
                     }
                 }
-            },
+            }
         })
             .then(function (resp) {
             updateFileList(_file, { status: 'success', response: resp.data });
@@ -142,6 +141,6 @@ export var Upload = function (props) {
         React.createElement(UploadList, { fileList: fileList, onRemove: handleRemove })));
 };
 Upload.defaultProps = {
-    name: 'file',
+    name: 'file'
 };
 export default Upload;

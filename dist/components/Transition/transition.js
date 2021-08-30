@@ -28,6 +28,6 @@ var Transition = function (props) {
 };
 Transition.defaultProps = {
     unmountOnExit: true,
-    appear: true,
+    appear: true
 };
 export default Transition;

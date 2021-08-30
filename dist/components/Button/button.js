@@ -22,18 +22,9 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 import React from 'react';
 import classNames from 'classnames';
-/**
- * 页面中最常用的的按钮元素，适合于完成特定的交互
- * ### 引用方法
- *
- * ~~~js
- * import { Button } from 'GaryC'
- * ~~~
- */
 export var Button = function (props) {
     var _a;
     var btnType = props.btnType, className = props.className, disabled = props.disabled, size = props.size, children = props.children, href = props.href, restProps = __rest(props, ["btnType", "className", "disabled", "size", "children", "href"]);
-    // btn, btn-lg, btn-primary
     var classes = classNames('btn', className, (_a = {},
         _a["btn-" + btnType] = btnType,
         _a["btn-" + size] = size,
@@ -48,6 +39,6 @@ export var Button = function (props) {
 };
 Button.defaultProps = {
     disabled: false,
-    btnType: 'default',
+    btnType: 'default'
 };
 export default Button;

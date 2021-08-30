@@ -18,12 +18,14 @@ var SubMenu = function (_a) {
     var index = _a.index, title = _a.title, children = _a.children, className = _a.className;
     var context = useContext(MenuContext);
     var openedSubMenus = context.defaultOpenSubMenus;
-    var isOpend = index && context.mode === 'vertical' ? openedSubMenus.includes(index) : false;
+    var isOpend = index && context.mode === 'vertical'
+        ? openedSubMenus.includes(index)
+        : false;
     var _b = useState(isOpend), menuOpen = _b[0], setOpen = _b[1];
     var classes = classNames('menu-item submenu-item', className, {
         'is-active': context.index === index,
         'is-opened': menuOpen,
-        'is-vertical': context.mode === 'vertical',
+        'is-vertical': context.mode === 'vertical'
     });
     var handleClick = function (e) {
         e.preventDefault();
@@ -39,7 +41,7 @@ var SubMenu = function (_a) {
     };
     var clickEvents = context.mode === 'vertical'
         ? {
-            onClick: handleClick,
+            onClick: handleClick
         }
         : {};
     var hoverEvents = context.mode !== 'vertical'
@@ -49,18 +51,18 @@ var SubMenu = function (_a) {
             },
             onMouseLeave: function (e) {
                 handleMouse(e, false);
-            },
+            }
         }
         : {};
     var renderChildren = function () {
         var subMenuClasses = classNames('garyc-submenu', {
-            'menu-opened': menuOpen,
+            'menu-opened': menuOpen
         });
         var childrenComponent = React.Children.map(children, function (child, i) {
             var childElement = child;
             if (childElement.type.displayName === 'MenuItem') {
                 return React.cloneElement(childElement, {
-                    index: index + "-" + i,
+                    index: index + "-" + i
                 });
             }
             else {
