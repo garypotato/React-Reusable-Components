@@ -5,10 +5,11 @@ Reusable components which allows you to customise components and can be easily i
 1. write in `Typescript`
 2. Copy the component from `ant design`
 3. components can be customized by `props`
-4. test each components by using `Jest` + `Enzyme`
+4. test each components by `Jest` + `Enzyme`
 5. publish in `npm` allows me to reuse them in the future
 6. use `prettier` as code formatter. I don't use `estlint` in this stage
-7. use `husky` + `commitlint` + `lint-stage` to formate each `git commit`
+7. `commitlint` formate each `commit message`
+8. use `husky` + `lint-staged` to create a `pre-commit hook`, that force `prettier` to check the code formate.
 
 ## `npm`
 You can install via `npm i gary-components`. npm address please click :point_right: https://www.npmjs.com/package/gary-components  
@@ -181,6 +182,5 @@ it allows user drage the file over to upload.
   <p>Drag file over to upload</p>
 </Upload>
 ```
-
 
 
