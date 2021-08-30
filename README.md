@@ -3,7 +3,7 @@ Reusable components which allows you to customise components and can be easily i
 
 ## What I want to achieve
 1. write in `Typescript`
-2. Copy the component from `ant design`
+2. Copy the component interface style from `ant design`
 3. components can be customized by `props`
 4. test each components by `Jest` + `Enzyme`
 5. publish in `npm` allows me to reuse them in the future
