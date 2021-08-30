@@ -170,13 +170,14 @@ it allows user drage the file over to upload.
 | drag | no | boolean | if drage files to upload is disabled |  --- |
 #### how to use
 ```
-<Uploa>
+<Upload
   action="https://run.mocky.io/v3/91d6540d-a509-4dc0-bb3f-32b55a56a6d5"
   onChange={() => handleChange()}
   onRemove={() => handleRemove()}
   name="fileName"
   multiple
-  drag>
+  drag
+>
   <Icon icon="upload" size="5x" theme="secondary" />
   <br />
   <p>Drag file over to upload</p>
