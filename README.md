@@ -1,6 +1,12 @@
 # TS Components
 Reusable components which allows you to customise components and can be easily installed through `npm`. 
 
+## Install
+install via npm
+```
+npm i gary-components
+```
+
 ## What I want to achieve
 1. write in `Typescript`
 2. Copy the component interface style from `ant design`
